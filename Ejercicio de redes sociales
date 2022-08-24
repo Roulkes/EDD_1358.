@@ -1,0 +1,74 @@
+te,tf,tr,ta,ty,tj = 62404,63232,64149,65410,66355,67496 #Las variables significan Seguitodes de twitter entre los meses
+print("<------------------------------------------------->")
+print("Seguidores de twitter de enero a junio: ")
+print("Ene   Feb   Mar   Abr   May   Jun  ")
+print("62404 63232 64149 65410 66355 67496")
+print("<------------------------------------------------->")
+dfs = tj - te #Calculamos la diferencia entre el mes de enero y junio
+print("La diferencia de seguidores en twitter de enero a junio es de: "+ str(dfs))
+print("<-------------------------------------------------------------------->")
+vye,vyf,vyr,vya,vyy,vyj = 12226,15605,19602,19452,21805,17344 #Las variables significan visualizaciones de youtube entre los meses
+print("Visualizaciones de youtube de enero a junio: ")
+print("Ene   Feb   Mar   Abr   May   Jun  ")
+print("12226 15605 19602 19452 21805 17344")
+print("<-------------------------------------------------------------------->")
+r = input("Dime de que meses quieres ver la diferencia de visualizaciones, escribelo así (Ene a Feb)")
+#Enero a junio
+if r == "Ene a Feb":
+    o = vyf - vye 
+    print("La diferencia de visualizaciones de enero a febrero es:",o )
+elif r == "Ene a Mar":
+    o = vyr - vye 
+    print("La diferencia de visualizaciones de enero a Marzo es:",o )
+elif r == "Ene a Abr":
+    o = vya - vye 
+    print("La diferencia de visualizaciones de enero a Abril es:",o )
+elif r == "Ene a May":
+    o = vyy - vye 
+    print("La diferencia de visualizaciones de enero a Mayo es:",o )
+elif r == "Ene a Jun":
+    o = vyj - vye 
+    print("La diferencia de visualizaciones de enero a Junio es:",o )
+#Febrero a Junio
+elif r == "Feb a Mar":
+    o = vyr - vyf 
+    print("La diferencia de visualizaciones de febrero a Marzo es:",o )
+elif r == "Feb a Abr":
+    o = vya - vyf 
+    print("La diferencia de visualizaciones de febrero a Abril es:",o )
+elif r == "Feb a May":
+    o = vyy - vyf 
+    print("La diferencia de visualizaciones de febrero a Mayo es:",o )
+elif r == "Feb a Jun":
+    o = vyj - vyf 
+    print("La diferencia de visualizaciones de febrero a Junio es:",o )
+#Marzo a junio
+elif r == "Mar a Abr":
+    o = vyr - vya 
+    print("La diferencia de visualizaciones de Marzo a Abril es:",o )
+elif r == "Mar a May":
+    o = vyy - vyr 
+    print("La diferencia de visualizaciones de Marzo a Mayo es:",o )
+elif r == "Mar a Jun":
+    o = vyj - vyr 
+    print("La diferencia de visualizaciones de Marzo a Junio es:",o )
+#Abril a junio
+elif r == "Abr a May":
+    o = vyy - vya 
+    print("La diferencia de visualizaciones de Abril a Mayo es:",o )
+elif r == "Abr a Jun":
+    o = vyj - vya 
+    print("La diferencia de visualizaciones de Abril a Junio es:",o )
+#Mayo a Junio
+elif r == "May a Jun":
+    o = vyy - vyj 
+    print("La diferencia de visualizaciones de Mayo a Junio es:",o )
+else: 
+    print("No existe esta opción y/o no escribiste bien")
+print("<-------------------------------------------------------------------->")
+pt = (863+828+917+1261+945+1141) / 6
+print("El promedio de crecimiento de Twitter es de:",pt)
+pf = (660+4850+3638+4585+5308+7925) / 6
+print("El promedio de crecimiento de Facebook es de:",pf)
+
+print("Fin del programa")
