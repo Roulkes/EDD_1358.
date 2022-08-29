@@ -1,0 +1,46 @@
+public class ArregloADT<T> {
+	private int tamanio;
+	private ArrayList<T> datos;
+
+	// Contructor
+	public ArregloADT(int taman) {
+		this.tamanio = taman;
+		datos = new ArrayList<>();
+		for (int i = 0; i < taman; i++) {
+			datos.add((T) new Object());
+		}
+	}
+
+// Longitud
+	public int getLongitud() {
+		return datos.size();
+	}
+
+	// Elemento
+	public T getElemento(int indice) {
+		if (indice >= 0 && indice < this.tamanio) {
+			return datos.get(indice);
+		}
+		return null;
+	}
+
+	public void setElemento(int indice, T elemento) {
+		if (indice >= 0 && indice < this.tamanio) {
+			datos.set(indice, elemento);
+		}
+	}
+
+	// Limpiar
+	public void limpiarInformacion() {
+		for (int i = 0; i < tamanio; i++) {
+			datos.set(i, null);
+		}
+	}
+
+	// To string
+	@Override
+	public String toString() {
+		return "Estado actual del arreglo: [ datos del arreglo: " + datos + ", Longitud del arreglo es de: "
+				+ getLongitud() + "]";
+	}
+}
