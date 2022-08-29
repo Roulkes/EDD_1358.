@@ -1,0 +1,19 @@
+paquete  tarea2 ;
+
+ clase  pública MainADT {
+	public  static  void  main ( String [] args ) {
+		ArregloADT < String > info = new  ArregloADT <>( 5 );
+		// obtenemos longuitud
+		sistema _ fuera _ println ( "El arreglo tiene tamaño de:" + info . getLongitud ());
+		// Ahora establecemos el elemento
+		información _ setElemento ( 3 , "chocolate" );
+		sistema _ fuera _ println ( "La posición 3 tiene el elemento:" + info . getElemento ( 3 ));
+		información _ setElemento ( 0 , "vainilla" );
+		// Obtención del elemento			
+		sistema _ fuera _ println ( "La posición 0 tiene elemento de:" + info . getElemento ( 0 ));
+		// Limpiamos toda informaciónn	
+		información _ limpiarInformación ();
+		// Encadenamos
+		sistema _ fuera _ println ( "El estado es:" + info . toString ());
+	}
+}
